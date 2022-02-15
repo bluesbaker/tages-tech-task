@@ -3,7 +3,7 @@
  * by Bluesbaker <Gordienko K.S.>
  */
 
-let axios = require('axios');
+const axios = require('axios');
 
 /**
  * Get user info by id
@@ -91,8 +91,8 @@ async function getComments(postId, limit) {
  * Get user list with correct info
  * @param {string} specialUserName - special user with comments of posts
  * @param {number} usersLimit - quantity users
- * @param {*} postsLimit - quantity posts
- * @param {*} commentsLimit - quantity comments
+ * @param {number} postsLimit - quantity posts
+ * @param {number} commentsLimit - quantity comments
  * @returns user list with correct info
  */
 async function getCorrectUsers(specialUserName, usersLimit = 0, postsLimit = 0, commentsLimit = 0) {
