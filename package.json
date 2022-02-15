@@ -1,0 +1,20 @@
+{
+  "name": "tages-tech-task",
+  "version": "1.0.0",
+  "description": "The technical task for the TAGES",
+  "main": "task.js",
+  "scripts": {
+    "start": "node task.js",
+    "output": "node task.js > output.json && echo \"Well done!\""
+  },
+  "keywords": [
+    "tech-task",
+    "task",
+    "tages"
+  ],
+  "author": "Bluesbaker <Gordienko K.S.>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.26.0"
+  }
+}
