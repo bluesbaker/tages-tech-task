@@ -38,7 +38,7 @@ async function getUsers(limit) {
         })
         .catch(err => {
             return new Error(err.message);
-        });;
+        });
     }
     // or limited quantity users
     else {
@@ -64,7 +64,7 @@ async function getPosts(userId, limit) {
     })
     .catch(err => {
         return new Error(err.message);
-    })
+    });
 
     return (limit && posts.slice(0, limit)) || posts;
 }
